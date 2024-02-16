@@ -1,0 +1,7 @@
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.csproj.AssemblyReference.cache
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.GeneratedMSBuildEditorConfig.editorconfig
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.AssemblyInfoInputs.cache
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.AssemblyInfo.cs
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.csproj.CoreCompileInputs.cache
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.MvcApplicationPartsAssemblyInfo.cs
+E:\uni\Term8\TA\AP\Project\ToDo-App\Backend\ToDo-App\ToDo-App\obj\Debug\net6.0\ToDo-App.MvcApplicationPartsAssemblyInfo.cache

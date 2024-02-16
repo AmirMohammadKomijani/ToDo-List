@@ -1,17 +1,17 @@
-﻿//using AutoMapper;
-//using magicVilla_api.Model;
-//using magicVilla_api.Model.DTO;
+﻿using AutoMapper;
+using ToDo_App.Model;
+using ToDo_App.Model.DTO;
 
-//namespace magicVilla_api
-//{
-//    public class MappingConfig : Profile
-//    {
-//        public MappingConfig()
-//        {
-//            //CreateMap<Villa, VillaDTO>().ReverseMap();
-//            //CreateMap<Villa, VillaCreateDTO>().ReverseMap();
-//            //CreateMap<Villa, VillaUpdateDTO>().ReverseMap();
-//        }
-//    }
+namespace ToDo_App
+{
+    public class MappingConfig : Profile
+    {
+        public MappingConfig()
+        {
+            CreateMap<Lists,ListDTO>().ReverseMap();
+            CreateMap<Lists, ListCreateDTO>().ReverseMap();
+            CreateMap<Lists, ListUpdateDTO>().ReverseMap();
+        }
+    }
 
-//}
+}

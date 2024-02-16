@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ToDo_App.Model
 {
-    public class List
+    public class Lists
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

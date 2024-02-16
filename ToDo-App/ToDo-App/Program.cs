@@ -1,7 +1,7 @@
-using magicVilla_api;
-using magicVilla_api.Data;
-//using magicVilla_api.Repository;
-//using magicVilla_api.Repository.IRepository;
+using ToDo_App;
+using ToDo_App.Data;
+using ToDo_App.Repository;
+using ToDo_App.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,9 +14,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 }
 );
 
-//builder.Services.AddScoped<IVillaRepository, VillaRepository>();
+builder.Services.AddScoped<IListRepository, ListRepository>();
 //builder.Services.AddScoped<IVillaNumberRepository, VillaNumberRepository>();
-//builder.Services.AddAutoMapper(typeof(MappingConfig));
+builder.Services.AddAutoMapper(typeof(MappingConfig));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

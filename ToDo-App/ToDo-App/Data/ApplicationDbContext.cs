@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ToDo_App.Model;
 
-namespace magicVilla_api.Data
+namespace ToDo_App.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -16,6 +16,6 @@ namespace magicVilla_api.Data
         //{
 
         //}
-        public DbSet<List> Lists { get; set; }
+        public DbSet<Lists> Lists { get; set; }
     }
 }

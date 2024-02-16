@@ -16,6 +16,6 @@ namespace magicVilla_api.Data
         //{
 
         //}
-        public DbSet<List> Villas { get; set; }
+        public DbSet<List> Lists { get; set; }
     }
 }

@@ -30,32 +30,32 @@ namespace ToDo_App.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Lists>> getLists(int id)
         {
-            Lists villaNum = await _dbLists.Get(u => u.Id == id);
-            return Ok(_mapper.Map<ListDTO>(villaNum));
+            Lists listNum = await _dbLists.Get(u => u.Id == id);
+            return Ok(_mapper.Map<ListDTO>(listNum));
         }
 
         [HttpPost]
-        public async Task<ActionResult<Lists>> CreateLists([FromBody] ListCreateDTO villaNumDto)
+        public async Task<ActionResult<Lists>> CreateLists([FromBody] ListCreateDTO listNumDto)
         {
-            var VillaNum = _mapper.Map<Lists>(villaNumDto);
-            await _dbLists.Create(VillaNum);
-            return Ok(VillaNum);
+            var listNum = _mapper.Map<Lists>(listNumDto);
+            await _dbLists.Create(listNum);
+            return Ok(listNum);
         }
 
         [HttpDelete]
         public async Task<ActionResult<Lists>> DeleteLists(int id)
         {
-            var villaNum = await _dbLists.Get(u => u.Id == id);
-            await _dbLists.Remove(villaNum);
+            var listNum = await _dbLists.Get(u => u.Id == id);
+            await _dbLists.Remove(listNum);
             return NoContent();
         }
 
         [HttpPut]
-        public async Task<ActionResult<Lists>> UpdateLists([FromBody] ListUpdateDTO villaNumDto)
+        public async Task<ActionResult<Lists>> UpdateLists([FromBody] ListUpdateDTO listNumDto)
         {
-            var villaNum = _mapper.Map<Lists>(villaNumDto);
-            await _dbLists.Update(villaNum);
-            return Ok(villaNum);
+            var listNum = _mapper.Map<Lists>(listNumDto);
+            await _dbLists.Update(listNum);
+            return Ok(listNum);
         }
     }
 }

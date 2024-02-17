@@ -17,5 +17,6 @@ namespace ToDo_App.Data
 
         //}
         public DbSet<Lists> Lists { get; set; }
+        public DbSet<Tasks> Tasks { get; set; }
     }
 }

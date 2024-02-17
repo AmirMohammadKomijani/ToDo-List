@@ -11,6 +11,10 @@ namespace ToDo_App
             CreateMap<Lists,ListDTO>().ReverseMap();
             CreateMap<Lists, ListCreateDTO>().ReverseMap();
             CreateMap<Lists, ListUpdateDTO>().ReverseMap();
+
+            CreateMap<Tasks, TaskDTO>().ReverseMap();
+            CreateMap<Tasks, TaskCreateDTO>().ReverseMap();
+            CreateMap<Tasks, TaskUpdateDTO>().ReverseMap();
         }
     }
 

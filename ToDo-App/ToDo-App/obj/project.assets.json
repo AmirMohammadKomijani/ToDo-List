@@ -2259,11 +2259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\uni\\Term8\\TA\\AP\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
+      "projectUniqueName": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
       "projectName": "ToDo-App",
-      "projectPath": "E:\\uni\\Term8\\TA\\AP\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
+      "projectPath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "E:\\uni\\Term8\\TA\\AP\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\obj\\",
+      "outputPath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

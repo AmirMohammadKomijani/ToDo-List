@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JDR9337pZkQfTA3bpOr7AvXyzzcKh3mCldVcwxbUnPuCEdj2ewoCd7RN1tEF+3wSswjt17WrW0jxb041YXtnZA==",
+  "dgSpecHash": "gaJ6IUF7Mr+kRcrShHSQKxsH3epnwYRq7YoclYHReWN2Eg3rBziWSER3cHZ8iJS4AXkf/fgz40HQ4sYscQbfzA==",
   "success": true,
   "projectFilePath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

@@ -1,0 +1,33 @@
+version: '3.4'
+
+networks:
+  demoToDo:
+
+services:
+  
+  todo-db:
+    container_name: AP-ToDo-Db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports :
+        - 8002:1433
+    environment:
+        - ACCEPT_EULA=Y
+        #- SA_PASSWORD=password@12345#
+    networks:
+        - demoToDo
+  todo-app:
+    container_name: AP-ToDo-App
+    image: ${DOCKER_REGISTRY-}todoapp
+    build:
+      context: .
+      dockerfile: ToDo-App/Dockerfile
+    ports:
+        - 8001:80 
+    depends_on:
+        - todo-db
+    environment:
+        - DB_HOST=todo-db
+        - DB_NAME=todoapp
+        - SA_PASSWORD=password@12345#
+    networks:
+        - demoToDo

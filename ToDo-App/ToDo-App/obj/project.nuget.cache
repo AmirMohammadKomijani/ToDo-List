@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gaJ6IUF7Mr+kRcrShHSQKxsH3epnwYRq7YoclYHReWN2Eg3rBziWSER3cHZ8iJS4AXkf/fgz40HQ4sYscQbfzA==",
+  "dgSpecHash": "WnkV2EyTnohgT+Ya0JXGuiKM43k2XOgP0iPPNoIRtzj8+rXbbyQbZxqJ+GoC7WtxwAA8nEe3G/AGwXgt0GWKCA==",
   "success": true,
-  "projectFilePath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
+  "projectFilePath": "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

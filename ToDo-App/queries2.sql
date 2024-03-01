@@ -1,0 +1,68 @@
+create database ToDoList;
+
+USE [ToDoList]
+GO
+/****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 2/24/2024 11:16:25 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[__EFMigrationsHistory](
+	[MigrationId] [nvarchar](150) NOT NULL,
+	[ProductVersion] [nvarchar](32) NOT NULL,
+ CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY CLUSTERED 
+(
+	[MigrationId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Lists]    Script Date: 2/24/2024 11:16:25 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Lists](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](max) NOT NULL,
+	[Created] [datetime2](7) NOT NULL,
+	[Updated] [datetime2](7) NOT NULL,
+ CONSTRAINT [PK_Lists] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Tasks]    Script Date: 2/24/2024 11:16:25 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Tasks](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](max) NOT NULL,
+	[Starred] [bit] NOT NULL,
+	[Checked] [bit] NOT NULL,
+	[DueDate] [datetime2](7) NOT NULL,
+	[Created] [datetime2](7) NOT NULL,
+	[Updated] [datetime2](7) NOT NULL,
+	[ListId] [int] NOT NULL,
+ CONSTRAINT [PK_Tasks] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Tasks] ADD  DEFAULT ('0001-01-01T00:00:00.0000000') FOR [Created]
+GO
+ALTER TABLE [dbo].[Tasks] ADD  DEFAULT ('0001-01-01T00:00:00.0000000') FOR [Updated]
+GO
+ALTER TABLE [dbo].[Tasks] ADD  DEFAULT ((0)) FOR [ListId]
+GO
+ALTER TABLE [dbo].[Tasks]  WITH CHECK ADD  CONSTRAINT [FK_Tasks_Lists_ListId] FOREIGN KEY([ListId])
+REFERENCES [dbo].[Lists] ([Id])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Tasks] CHECK CONSTRAINT [FK_Tasks_Lists_ListId]
+GO
+
+

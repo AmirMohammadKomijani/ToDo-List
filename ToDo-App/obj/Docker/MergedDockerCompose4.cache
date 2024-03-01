@@ -1,0 +1,72 @@
+name: dockercompose9960498487179828118
+services:
+  todo-app:
+    build:
+      context: E:\uni\Term8\TA\AP Dr.Etemadi\Project\ToDo-App\Backend\ToDo-App
+      dockerfile: ToDo-App/Dockerfile
+    container_name: AP-ToDo-App
+    depends_on:
+      todo-db:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DB_HOST: todo-db
+      DB_NAME: todoapp
+    image: todoapp
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "8001"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "8003"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\ASUS\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\ASUS\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  todo-db:
+    container_name: AP-ToDo-Db
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: password@12345#
+    hostname: localDb_Main
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "6000"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: mysqldb
+      target: /var/lib/mysql
+      volume: {}
+networks:
+  default:
+    name: dockercompose9960498487179828118_default
+volumes:
+  mysqldb:
+    name: dockercompose9960498487179828118_mysqldb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj": {}
+    "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj": {}
   },
   "projects": {
-    "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj": {
+    "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
+        "projectUniqueName": "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
         "projectName": "ToDo-App",
-        "projectPath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
+        "projectPath": "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\ToDo-App.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\uni\\Term8\\TA\\AP Saleh\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\obj\\",
+        "outputPath": "E:\\uni\\Term8\\TA\\AP Dr.Etemadi\\Project\\ToDo-App\\Backend\\ToDo-App\\ToDo-App\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -90,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
